@@ -11,7 +11,7 @@ export default function Highscore() {
       }
     }, 25);
     return () => clearInterval(interval);
-  }, [highscore, setHighscore]);
+  }, [highscore, setHighscore, gameover]);
 
   return (
     <div className="text-xl fixed top-2 left-2 text-purple-900 font-bold z-50 uppercase">

@@ -70,7 +70,7 @@ export default function Goose() {
       setGooseIndex(y);
       console.log(y);
     }
-  }, [y, setY]);
+  }, [y, setY, setGooseIndex, setGameover]);
   const defaultStyles = "w-[4vw] h-[4vw] inset-[48%]";
   return (
     <div
