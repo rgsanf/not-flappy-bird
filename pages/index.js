@@ -1,6 +1,6 @@
 import Head from "next/head";
-import GameoverScreen from "./components/GameoverScreen";
-import Level from "./components/Level";
+import GameoverScreen from "../components/GameoverScreen";
+import Level from "../components/Level";
 
 export default function Home() {
   return (
