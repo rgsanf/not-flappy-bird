@@ -26,9 +26,20 @@ export default function Goose() {
         setMouseDown(true);
       }
     }
-    document.addEventListener("click", handleMouseDown);
+    document.addEventListener("mousedown", handleMouseDown);
     return () => {
-      document.removeEventListener("click", handleMouseDown);
+      document.removeEventListener("mousedown", handleMouseDown);
+    };
+  }, [mouseDown, setMouseDown, gameover]);
+  useEffect(() => {
+    function handleMouseDown() {
+      if (mouseDown !== true) {
+        setMouseDown(true);
+      }
+    }
+    document.addEventListener("touchstart", handleMouseDown);
+    return () => {
+      document.removeEventListener("touchstart", handleMouseDown);
     };
   }, [mouseDown, setMouseDown, gameover]);
   useEffect(() => {
