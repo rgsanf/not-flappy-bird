@@ -51,6 +51,15 @@ export default function Goose() {
       document.removeEventListener("mouseup", handleMouseUp);
     };
   }, [setMouseDown, gameover]);
+  useEffect(() => {
+    function handleMouseUp() {
+      setMouseDown(false);
+    }
+    document.addEventListener("touchend", handleMouseUp);
+    return () => {
+      document.removeEventListener("touchend", handleMouseUp);
+    };
+  }, [setMouseDown, gameover]);
 
   // useEffect(() => {
   //   const holdingMouse = setInterval(() => {
