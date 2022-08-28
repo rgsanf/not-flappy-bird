@@ -76,7 +76,7 @@ export default function Goose() {
     <div
       className={`w-[${gooseSize}vw] h-[${gooseSize}vw] bg-gray-300 fixed inset-[${
         (100 - gooseSize) / 2
-      }%] rounded-full flex justify-center items-center transition-all duration-100 z-50 pointer-events-none`}
+      }%] rounded-full flex justify-center items-center transition-all duration-100 z-50 `}
       style={{ top: y + "%" }}
     >
       Goose

@@ -47,14 +47,14 @@ export default function Pipes({ children }) {
   }, [pipes, gooseIndex, setGameover]);
 
   return (
-    <div className="pointer-events-none">
+    <div className="">
       {children}
       <div className="w-full relative">
         {pipes.map((pipe, i) => {
           return (
             <React.Fragment key={i}>
               <div
-                className="w-[5%] bg-pink-400 fixed top-[10%] z-50 pointer-events-none"
+                className="w-[5%] bg-pink-400 fixed top-[10%] z-50 "
                 style={{
                   height: 100 - pipe.height - pipeGap + "%",
                   left: pipe.x + "%",
