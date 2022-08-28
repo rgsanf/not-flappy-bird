@@ -1,6 +1,6 @@
 import "../styles/globals.css";
-import { GameoverProvider } from "./context/Gameover";
-import { GooseIndexProvider } from "./context/GooseIndex";
+import { GameoverProvider } from "../context/Gameover";
+import { GooseIndexProvider } from "../context/GooseIndex";
 
 function MyApp({ Component, pageProps }) {
   return (
