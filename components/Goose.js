@@ -94,12 +94,16 @@ export default function Goose() {
   const defaultStyles = "w-[4vw] h-[4vw] inset-[48%]";
   return (
     <div
-      className={`w-[${gooseSize}vw] h-[${gooseSize}vw] bg-gray-300 fixed inset-[${
+      className={`w-[${gooseSize}vw] h-[${gooseSize}vw] fixed inset-[${
         (100 - gooseSize) / 2
-      }%] rounded-full flex justify-center items-center transition-all duration-100 z-50 `}
+      }%] flex justify-center items-center transition-all duration-100 z-50 select-none `}
       style={{ top: y + "%" }}
     >
-      Goose
+      <img
+        src="/image/best-goose-drawing-ever.com-i-like-pinaple-on-pizza.png"
+        alt="best goose"
+        className="select-none "
+      />
     </div>
   );
 }

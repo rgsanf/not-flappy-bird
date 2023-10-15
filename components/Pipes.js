@@ -36,8 +36,7 @@ export default function Pipes({ children }) {
       const botPipe = 10 + pipe.height;
       const topPipe = botPipe + pipeGap / 2;
       if (
-        (topPipe < 100 - gooseIndex - gooseSize / 2 ||
-          botPipe > 100 - gooseIndex - gooseSize / 2) &&
+        (topPipe < 100 - gooseIndex - gooseSize / 2 || botPipe > 100 - gooseIndex - gooseSize / 2) &&
         pipe.x > 50 - gooseSize / 2 &&
         pipe.x < 50 + gooseSize / 2
       ) {
@@ -54,14 +53,14 @@ export default function Pipes({ children }) {
           return (
             <React.Fragment key={i}>
               <div
-                className="w-[5%] bg-pink-400 fixed top-[10%] z-50 "
+                className="w-[5%] bg-dark bg-green-600 fixed top-[10%] z-50 "
                 style={{
                   height: 100 - pipe.height - pipeGap + "%",
                   left: pipe.x + "%",
                 }}
               ></div>
               <div
-                className="w-[5%] bg-pink-400 fixed bottom-[10%] z-50"
+                className="w-[5%] bg-green-600 fixed bottom-[10%] z-50"
                 style={{ height: pipe.height + "%", left: pipe.x + "%" }}
               ></div>
             </React.Fragment>
